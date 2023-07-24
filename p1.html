@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> fitness</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+                body {
+                        margin: 0%;
+                        padding: 0%;
+                        background: url("./images/gym.jpg");
+                        color: rgb(10, 76, 134);
+                        height: 100vh;
+                        width: 100vw;
+                        background-repeat: no-repeat;
+                }
+
+                .left {
+                        position: absolute;
+                        display: inline-block;
+                        border: 2px ;
+                        top: 20px;
+                        left: 34px;
+                }
+
+                .mid {
+                        display: block;
+                        width: 700px;
+                        margin: 18px auto;
+                        
+
+                }
+
+                .left img {
+                        width: 200px;
+                }
+
+                .left div {
+                        text-align: center;
+                }
+
+                .right {
+                        top: 20px;
+                        position: absolute;
+                        right: 34px;
+                        /* display: inline-block; */
+                        display: flex;
+                        
+                }
+
+                .navbar {
+                        display: flex;
+                       
+                }
+
+                .navbar li {
+                        display: inline-block;
+                }
+
+                .navbar li a {
+                        color: rgb(242, 241, 245);
+                        text-decoration: none;
+                        padding: 10px 20px;
+                        font-size: 125%;
+                }
+
+                .navbar li a:hover{
+                        text-decoration: underline;
+
+                }
+                .navbar li a:active {
+                        text-decoration: underline;
+                        color: rgb(117, 105, 105);
+                }
+
+                .btn {
+                        font-family: Arial, Helvetica, sans-serif;
+                        background-color: rgb(247, 245, 248);
+                        margin: 0% 9px;
+                        padding: 4px 14px;
+                        color: rgb(1, 12, 8);
+                        border: 2px solid gray;
+                        border-radius: 5px;
+                        font-size: 12px;
+                        cursor: pointer;
+                        width: 40%;
+                        
+                }
+
+
+                .btn:hover {
+                        background-color: azure;
+
+                }
+
+                .container {
+                        border: 2px solid rgba(240, 240, 240, 0.507);
+                        margin: 0 auto;
+                        padding: 3% 5%;
+                        width: 30%;
+                        height: 60%;
+                        border-radius: 28px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                }
+
+                .form.group{
+                        width: 100px;
+                        padding: 6%;
+                        border: 20px solid rgb(42, 35, 102);
+                        margin: 6px auto;
+                        
+                }
+                input[type=text] {
+                        width: 100%;
+                        border: 3px solid rgba(5, 1, 17, 0.884);
+                        border-radius: 4px;
+                        padding: 5x 10px;
+                        margin: 4px 0;
+                }
+                
+
+                .container h1 {
+                        text-align: center;
+                        width: 100%;
+                        font-family: ui-monospace;
+                        padding: 10%;
+                        color: rgb(127, 127, 230);
+                }
+
+                .conatiner.btn {
+                        display: block;
+                        width: 40px;
+                        margin: 10px auto;
+
+                }
+                .item {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                   } 
+                
+        </style>
+
+</head>
+
+<body>
+        <header class="header">
+                <div class="left">
+                        <img src="./images/exe.jpeg" alt="error">
+                        <div>fitness image</div>
+                        <!--left for logo-->
+                </div>
+                <div class="mid">
+                        <ul class="navbar">
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">aboutus</a></li>
+                                <li><a href="#">fitness</a></li>
+                                <li><a href="#">contactus</a></li>
+                        </ul>
+                        <!--mid for navbar-->
+                </div>
+                <div class="right">
+                        <!--right for buttons-->
+                        <button class="btn">call us know</button>
+                        <button class="btn">contact us</button>
+                </div>
+        </header>
+        <div class="container">
+                <h1>
+                        Join the best gym of ghaziabad
+                </h1>
+
+                <form class="item" action="noaction.php">
+                        <div class="form.group">
+                                <input type="text" name=" " placeholder="enter the name">
+                        </div>
+                        <div class="form.group">
+                                <input type="text" name=" " placeholder="enter the gender">
+                        </div>
+                        <div class="form.group">
+                                <input type="text" name=" " placeholder="enter the age">
+                        </div>
+                </form>
+
+                <button class=" btn">submit</button>
+        </div>
+
+</body>
+
+</html>
